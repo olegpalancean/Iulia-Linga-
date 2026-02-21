@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iulia Linga — Transformare prin autenticitate</title>
+    <meta name="description"
+        content="Iulia Linga – Master Practician NLP. Cursuri online, consultații personale, întâlniri și retreat-uri pentru dezvoltare personală și feminitate.">
+    <meta property="og:title" content="Iulia Linga — Transformare prin autenticitate">
+    <meta property="og:description"
+        content="Cursuri online, consultații personale, întâlniri și retreat-uri pentru dezvoltare personală și feminitate.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#" class="nav__logo">Iulia Linga</a>
+            <ul class="nav__links">
+                <li><a href="#about">Despre mine</a></li>
+                <li><a href="#services">Servicii</a></li>
+                <li><a href="#testimonials">Recenzii</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav__burger" id="navBurger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__links">
+            <li><a href="#about">Despre mine</a></li>
+            <li><a href="#services">Servicii</a></li>
+            <li><a href="#testimonials">Recenzii</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__particles" id="particles"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow animate-in">Dezvoltare personală · Feminitate · Armonie</p>
+            <h1 class="hero__title animate-in">Iulia Linga</h1>
+            <p class="hero__subtitle animate-in">Transformare prin autenticitate</p>
+            <a href="#services" class="hero__cta animate-in">Descoperă serviciile</a>
+        </div>
+        <div class="hero__scroll-indicator">
+            <span>Descoperă</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="about__image-wrapper animate-in">
+                <div class="about__image-frame">
+                    <img src="assets/about-portrait.png" alt="Iulia Linga" class="about__image">
+                </div>
+                <div class="about__image-accent"></div>
+            </div>
+            <div class="about__text animate-in">
+                <p class="about__label">Despre mine</p>
+                <h2 class="about__heading">Bine ai venit în<br>lumea mea</h2>
+                <p class="about__bio">
+                    Sunt Iulia Linga — Master Practician NLP, femeie, mamă a 4 copii,
+                    într-o căsătorie de 20 de ani. Am trăit, am simțit, am crescut —
+                    și din toată această experiență s-a născut dorința de a ghida
+                    și alte femei spre propria esență.
+                </p>
+                <p class="about__bio">
+                    Pasiunea mea pentru dezvoltarea personală și feminitate a condus
+                    la crearea unor programe transformaționale unice: <em>Arta de a fi Femeie</em>,
+                    <em>Arta de a fi tu însuți</em>, <em>Armonie din interior</em> și <em>Drumul meu</em>.
+                </p>
+                <div class="about__credentials">
+                    <div class="about__credential">
+                        <span class="about__credential-number">20+</span>
+                        <span class="about__credential-label">ani experiență</span>
+                    </div>
+                    <div class="about__credential">
+                        <span class="about__credential-number">4</span>
+                        <span class="about__credential-label">programe create</span>
+                    </div>
+                    <div class="about__credential">
+                        <span class="about__credential-number">NLP</span>
+                        <span class="about__credential-label">Master Practician</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PHILOSOPHY / DIVIDER ===== -->
+    <section class="philosophy">
+        <div class="philosophy__container animate-in">
+            <blockquote class="philosophy__quote">
+                „Viața pe care o meriți începe cu alegerea de a crește.<br>
+                <span>Începe călătoria acum.</span>"
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES CAROUSEL ===== -->
+    <section class="services" id="services">
+        <div class="services__header animate-in">
+            <p class="services__label">Servicii</p>
+            <h2 class="services__heading">Cum te pot ajuta</h2>
+            <p class="services__subheading">Alege calea care rezonează cu tine</p>
+        </div>
+
+        <div class="carousel" id="carousel">
+            <div class="carousel__track-container">
+                <div class="carousel__track" id="carouselTrack">
+
+                    <!-- Slide 1: Online Courses -->
+                    <div class="carousel__slide">
+                        <div class="carousel__card">
+                            <div class="carousel__card-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="1.5"
+                                        opacity="0.3" />
+                                    <path d="M20 18h24a2 2 0 012 2v18a2 2 0 01-2 2H20a2 2 0 01-2-2V20a2 2 0 012-2z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M26 44h12M32 40v4" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path d="M28 26l8 4-8 4V26z" fill="currentColor" opacity="0.6" />
+                                </svg>
+                            </div>
+                            <h3 class="carousel__card-title">Cursuri Online</h3>
+                            <p class="carousel__card-description">
+                                Programe de dezvoltare personală pe care le parcurgi în ritmul tău,
+                                din confortul casei tale. Lecții video, meditații ghidate, exerciții
+                                practice și o comunitate de femei care cresc împreună.
+                            </p>
+                            <ul class="carousel__card-features">
+                                <li>Acces nelimitat la conținut</li>
+                                <li>Comunitate privată de suport</li>
+                                <li>Meditații și exerciții practice</li>
+                            </ul>
+                            <a href="cursuri-online.html" class="carousel__card-cta">Află mai multe</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Personal Consultations -->
+                    <div class="carousel__slide">
+                        <div class="carousel__card">
+                            <div class="carousel__card-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="1.5"
+                                        opacity="0.3" />
+                                    <circle cx="32" cy="24" r="8" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M18 46c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M38 20l4-4M40 22l4-2" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" opacity="0.5" />
+                                </svg>
+                            </div>
+                            <h3 class="carousel__card-title">Consultații Personale</h3>
+                            <p class="carousel__card-description">
+                                Sesiuni individuale de coaching și NLP, adaptate nevoilor tale unice.
+                                Un spațiu sigur unde poți explora, vindeca și transforma tiparele
+                                care nu te mai servesc.
+                            </p>
+                            <ul class="carousel__card-features">
+                                <li>Sesiuni 1-la-1 personalizate</li>
+                                <li>Tehnici NLP avansate</li>
+                                <li>Program flexibil, online sau fizic</li>
+                            </ul>
+                            <a href="consultatii.html" class="carousel__card-cta">Programează o sesiune</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: In-Person Meetings -->
+                    <div class="carousel__slide">
+                        <div class="carousel__card">
+                            <div class="carousel__card-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="1.5"
+                                        opacity="0.3" />
+                                    <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <circle cx="40" cy="24" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M14 42c0-5.523 4.477-10 10-10h4" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path d="M36 32h4c5.523 0 10 4.477 10 10" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path d="M32 36v8M28 40h8" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" opacity="0.5" />
+                                </svg>
+                            </div>
+                            <h3 class="carousel__card-title">Întâlniri în persoană</h3>
+                            <p class="carousel__card-description">
+                                Workshop-uri de grup și sesiuni live unde energia colectivă
+                                amplifică transformarea. Întâlniri autentice, în care femeile
+                                se susțin reciproc pe drumul creșterii.
+                            </p>
+                            <ul class="carousel__card-features">
+                                <li>Workshop-uri tematice de grup</li>
+                                <li>Exerciții experiențiale</li>
+                                <li>Conexiune autentică între participante</li>
+                            </ul>
+                            <a href="intalniri.html" class="carousel__card-cta">Vezi programul</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Retreats -->
+                    <div class="carousel__slide">
+                        <div class="carousel__card">
+                            <div class="carousel__card-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="1.5"
+                                        opacity="0.3" />
+                                    <path d="M16 44l8-16 8 10 6-8 10 14" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="42" cy="22" r="4" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M20 20c4-4 8-2 12 0s8 0 12-2" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" opacity="0.4" />
+                                </svg>
+                            </div>
+                            <h3 class="carousel__card-title">Retreat-uri</h3>
+                            <p class="carousel__card-description">
+                                Experiențe imersive de câteva zile, în locuri pline de
+                                liniște și frumusețe naturală. Un timp dedicat ție, departe
+                                de agitația zilnică — pentru reconectare profundă cu sinele.
+                            </p>
+                            <ul class="carousel__card-features">
+                                <li>Locații naturale deosebite</li>
+                                <li>Program holistic complet</li>
+                                <li>Transformare profundă și odihnă</li>
+                            </ul>
+                            <a href="retreat-uri.html" class="carousel__card-cta">Descoperă retreat-urile</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="carousel__controls">
+                <button class="carousel__btn carousel__btn--prev" id="carouselPrev" aria-label="Slide anterioară">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <div class="carousel__dots" id="carouselDots">
+                    <button class="carousel__dot active" data-index="0" aria-label="Slide 1"></button>
+                    <button class="carousel__dot" data-index="1" aria-label="Slide 2"></button>
+                    <button class="carousel__dot" data-index="2" aria-label="Slide 3"></button>
+                    <button class="carousel__dot" data-index="3" aria-label="Slide 4"></button>
+                </div>
+                <button class="carousel__btn carousel__btn--next" id="carouselNext" aria-label="Slide următoare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS / RECENZII ===== -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials__container">
+            <div class="testimonials__header animate-in">
+                <p class="testimonials__label">Recenzii</p>
+                <h2 class="testimonials__heading">Ce spun participantele</h2>
+                <p class="testimonials__subheading">
+                    Citește gândurile sincere ale femeilor care au fost exact acolo unde ești tu acum
+                    și care au ales să-și schimbe viața.
+                </p>
+            </div>
+
+            <div class="testimonials__slider animate-in" id="testimonialsSlider">
+                <div class="testimonials__track" id="testimonialsTrack">
+
+                    <!-- Testimonial 1 -->
+                    <div class="testimonials__slide">
+                        <div class="testimonials__card">
+                            <div class="testimonials__image">
+                                <img src="assets/flower-magnolia.png" alt="Magnolie" loading="lazy">
+                            </div>
+                            <div class="testimonials__content">
+                                <svg class="testimonials__quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                                </svg>
+                                <blockquote class="testimonials__text">
+                                    Cursul „Arta de a fi femeie" a fost cel mai prețios cadou pe care aș fi putut să
+                                    mi-l fac.
+                                    Așteptam zilele de luni, miercuri și vineri ca să văd ce exerciții noi vor mai fi,
+                                    apoi duminica era ziua întâlnirilor cu fetele frumoase din grup. Iulia a organizat
+                                    bine teoria, captivant, succint, motivant și ușor de înțeles. Sunt fericită că am
+                                    venit la acest curs și observ multe schimbări în viața mea.
+                                </blockquote>
+                                <p class="testimonials__author">— Participantă la cursul Arta de a fi Femeie</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonials__slide">
+                        <div class="testimonials__card">
+                            <div class="testimonials__image">
+                                <img src="assets/flower-roses.png" alt="Trandafiri" loading="lazy">
+                            </div>
+                            <div class="testimonials__content">
+                                <svg class="testimonials__quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                                </svg>
+                                <blockquote class="testimonials__text">
+                                    Salutare Iulia, vreau și eu să îți mulțumesc cu recunoștință pentru acest curs
+                                    minunat
+                                    organizat anume pentru noi femeile. Am început să fiu mult mai atentă cu mine, cu
+                                    soțul meu
+                                    care și el vede cu siguranță schimbarea din mine. Acum pot să spun că mă iubesc și
+                                    îmi acord
+                                    tot timpul din lume când simt că am nevoie. Îți mulțumesc cu multă recunoștință și
+                                    desigur
+                                    ne vedem în următorul curs.
+                                </blockquote>
+                                <p class="testimonials__author">— Participantă la curs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonials__slide">
+                        <div class="testimonials__card">
+                            <div class="testimonials__image">
+                                <img src="assets/flower-lavender.png" alt="Lavandă" loading="lazy">
+                            </div>
+                            <div class="testimonials__content">
+                                <svg class="testimonials__quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                                </svg>
+                                <blockquote class="testimonials__text">
+                                    Dragă Iulia, vreau să-ți mulțumesc pentru noile cunoștințe, pentru modul simplu, dar
+                                    în
+                                    același timp atât de profund, de a ne ghida cu dedicare și de a ne povesti atâtea
+                                    informații
+                                    și tehnici în cadrul cursului Arta de a fi Femeie. Grație acestui curs am cunoscut
+                                    mai bine
+                                    femeia din mine, mi-am conștientizat atuurlie, acceptat și exprimat emoțiile. A fost
+                                    o
+                                    experiență magică și de iluminare, pe care consider că orice femeie ar trebui să o
+                                    parcurgă.
+                                    Mulțumesc! ♡
+                                </blockquote>
+                                <p class="testimonials__author">— Participantă la curs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonials__slide">
+                        <div class="testimonials__card">
+                            <div class="testimonials__image">
+                                <img src="assets/flower-tulips.png" alt="Lalele" loading="lazy">
+                            </div>
+                            <div class="testimonials__content">
+                                <svg class="testimonials__quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                                </svg>
+                                <blockquote class="testimonials__text">
+                                    Nu mi-e ușor să fiu eu însămi, deseori mă ard și cad în întuneric și frig, fricile
+                                    și
+                                    îndoielile mă țin acolo, până când esența mea feminină se trezește. Esența noastră
+                                    feminină
+                                    e fundamentul, e cea care stă la baza tuturor începuturilor noastre. Cursul „Arta de
+                                    a fi
+                                    femeie" l-am ales pentru că nu e suficient să știi că ești femeie... sunt mult mai
+                                    multe
+                                    instrumente de autocunoaștere, de explorare, ca să te desfaci ca o floare încet și
+                                    să fii
+                                    o fântână nesecată de apă limpede și tămăduitoare.
+                                </blockquote>
+                                <p class="testimonials__author">— Participantă la curs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonials__slide">
+                        <div class="testimonials__card">
+                            <div class="testimonials__image">
+                                <img src="assets/flower-wildflowers.png" alt="Flori de câmp" loading="lazy">
+                            </div>
+                            <div class="testimonials__content">
+                                <svg class="testimonials__quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                                </svg>
+                                <blockquote class="testimonials__text">
+                                    Draga Iulia, a fost o călătorie minunată care m-a ajutat să mă debarasez de tensiuni
+                                    prin dans, cântec — face minuni! Ești un ghid minunat! Mulțumesc pentru tot ceea ce
+                                    faci pentru noi femeile, pentru că ne ajuți să ne regăsim esența, să ne reconectăm
+                                    cu
+                                    natura noastră feminină și să trăim viața cu mai multă bucurie și autenticitate.
+                                </blockquote>
+                                <p class="testimonials__author">— Participantă la curs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="testimonials__slide">
+                        <div class="testimonials__card">
+                            <div class="testimonials__image">
+                                <img src="assets/flower-cherry.png" alt="Flori de cireș" loading="lazy">
+                            </div>
+                            <div class="testimonials__content">
+                                <svg class="testimonials__quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                                </svg>
+                                <blockquote class="testimonials__text">
+                                    Practicile zilnice îmi întăresc credința în mine și-mi lărgesc cunoașterea de sine.
+                                    De ani de zile am acumulat informații teoretice, dar doar exercițiile tale practice
+                                    pun cap la cap tot ce am acumulat. Mulțumesc că ai creat acest spațiu sacru unde
+                                    femeile pot să crească, să se vindece și să evolueze împreună. Este o binecuvântare
+                                    să fac parte din această comunitate minunată.
+                                </blockquote>
+                                <p class="testimonials__author">— Participantă la curs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Testimonials Controls -->
+                <div class="testimonials__controls">
+                    <button class="testimonials__btn testimonials__btn--prev" id="testimonialsPrev"
+                        aria-label="Recenzia anterioară">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="testimonials__dots" id="testimonialsDots">
+                        <button class="testimonials__dot active" data-index="0" aria-label="Recenzia 1"></button>
+                        <button class="testimonials__dot" data-index="1" aria-label="Recenzia 2"></button>
+                        <button class="testimonials__dot" data-index="2" aria-label="Recenzia 3"></button>
+                        <button class="testimonials__dot" data-index="3" aria-label="Recenzia 4"></button>
+                        <button class="testimonials__dot" data-index="4" aria-label="Recenzia 5"></button>
+                        <button class="testimonials__dot" data-index="5" aria-label="Recenzia 6"></button>
+                    </div>
+                    <button class="testimonials__btn testimonials__btn--next" id="testimonialsNext"
+                        aria-label="Recenzia următoare">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER / CONTACT ===== -->
+    <footer class="footer" id="contact">
+        <div class="footer__container">
+            <div class="footer__brand animate-in">
+                <h2 class="footer__logo">Iulia Linga</h2>
+                <p class="footer__tagline">Transformare prin autenticitate</p>
+            </div>
+            <div class="footer__links animate-in">
+                <h3 class="footer__heading">Conectează-te cu mine</h3>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/profile.php?id=100003969658637" target="_blank" rel="noopener"
+                        class="footer__social-link" aria-label="Facebook Messenger">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2C6.477 2 2 6.145 2 11.243c0 2.907 1.456 5.502 3.734 7.19V22l3.377-1.852c.901.252 1.857.388 2.889.388 5.523 0 10-4.145 10-9.243S17.523 2 12 2zm.997 12.456l-2.545-2.716-4.97 2.716 5.467-5.8 2.609 2.716 4.906-2.716-5.467 5.8z" />
+                        </svg>
+                        <span>Messenger</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100003969658637" target="_blank" rel="noopener"
+                        class="footer__social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Iulia Linga. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

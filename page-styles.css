@@ -1,0 +1,380 @@
+/* ================================================
+   PAGE STYLES — Shared styles for service detail pages
+   ================================================ */
+
+/* ---- Page Hero ---- */
+.page-hero {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--bg-deep) 0%, #2a2a4a 50%, var(--bg-deep) 100%);
+    overflow: hidden;
+    padding: 6rem 1.5rem 3rem;
+}
+
+.page-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 80%, rgba(201, 169, 110, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.page-hero__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 640px;
+}
+
+.page-hero__back {
+    display: inline-block;
+    color: var(--accent-soft);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.page-hero__back:hover {
+    opacity: 1;
+}
+
+.page-hero__icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 1.5rem;
+    color: var(--accent);
+}
+
+.page-hero__icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.page-hero__title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 300;
+    color: var(--text-light);
+    letter-spacing: 0.02em;
+    margin-bottom: 0.75rem;
+}
+
+.page-hero__subtitle {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--accent-soft);
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    font-style: italic;
+}
+
+
+/* ---- Page Content ---- */
+.page-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+/* ---- Page Sections ---- */
+.page-section {
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.page-section:last-child {
+    border-bottom: none;
+}
+
+.page-section__heading {
+    font-family: var(--font-heading);
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 400;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.01em;
+}
+
+.page-section__text {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.85;
+    color: var(--text-dark-muted);
+    max-width: 720px;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+.page-section__text:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---- Highlight Section ---- */
+.page-section--highlight {
+    background: linear-gradient(135deg, #f5f0e8 0%, var(--bg-warm) 50%, #f5f0e8 100%);
+    margin: 0 -1.5rem;
+    padding: 4rem 1.5rem;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+
+/* ---- CTA Section ---- */
+.page-section--cta {
+    text-align: center;
+    padding: 5rem 0;
+    border-bottom: none;
+}
+
+.page-cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--bg-deep);
+    background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+    border-radius: var(--radius-lg);
+    transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+    box-shadow: 0 4px 20px rgba(201, 169, 110, 0.25);
+}
+
+.page-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(201, 169, 110, 0.35);
+}
+
+
+/* ---- Course Grid ---- */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.course-card {
+    position: relative;
+    background: linear-gradient(145deg, #ffffff, var(--bg-warm));
+    border: 1px solid rgba(201, 169, 110, 0.15);
+    border-radius: var(--radius-xl);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.course-card__badge {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+    color: var(--bg-deep);
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+    border-radius: 100px;
+}
+
+.course-card__title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.course-card__duration {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.course-card__desc {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--text-dark-muted);
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+}
+
+.course-card__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    border-top: 1px solid rgba(201, 169, 110, 0.12);
+    padding-top: 1.25rem;
+}
+
+.course-card__features li {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--text-dark-muted);
+    padding: 0.35rem 0 0.35rem 1.25rem;
+    position: relative;
+}
+
+.course-card__features li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 0.65rem;
+    top: 0.5rem;
+}
+
+.course-card__cta {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.75rem 1.75rem;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s var(--ease-out);
+}
+
+.course-card__cta:hover {
+    background: var(--accent);
+    color: var(--bg-deep);
+    box-shadow: 0 4px 16px rgba(201, 169, 110, 0.3);
+}
+
+
+/* ---- Benefits Grid ---- */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit {
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.benefit__icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1;
+}
+
+.benefit__title {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.benefit__text {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--text-dark-muted);
+}
+
+
+/* ---- Testimonial Block ---- */
+.testimonial-block {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(145deg, rgba(201, 169, 110, 0.04), rgba(201, 169, 110, 0.08));
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(201, 169, 110, 0.12);
+}
+
+.testimonial-block__quote {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin: 0 0 1rem;
+}
+
+.testimonial-block__author {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+    .page-hero {
+        min-height: 40vh;
+        padding: 5rem 1rem 2.5rem;
+    }
+
+    .page-hero__icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .page-section {
+        padding: 3rem 0;
+    }
+
+    .page-section--highlight {
+        padding: 3rem 1rem;
+        margin: 0 -1.5rem;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card {
+        padding: 2rem 1.5rem;
+    }
+}
